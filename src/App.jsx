@@ -4,6 +4,11 @@ import gsap from "gsap";
 import "remixicon/fonts/remixicon.css";
 
 function App() {
+  const download = () => {
+    alert(
+      "Just an April Fool after April. I have created this just for fun. To make a Smile on your face in the present situation of War. Love you all.Try to be happy and make others happy. Stay safe and healthy. ❤️"
+    );
+  };
   let [showContent, setShowContent] = useState(false);
   useGSAP(() => {
     const tl = gsap.timeline();
@@ -206,7 +211,7 @@ function App() {
                   eveniet eaque, dicta, hic quisquam? Ex cupiditate ipsa nostrum
                   autem sapiente.
                 </p>
-                <button className="bg-yellow-500 px-10 py-10 text-black mt-10 text-4xl">
+                <button onClick={download} className="bg-yellow-500 px-10 py-10 text-black mt-10 text-4xl">
                   Download Now
                 </button>
               </div>
